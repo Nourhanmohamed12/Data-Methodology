@@ -1,6 +1,4 @@
-<div align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=60A5FA&center=true&vCenter=true&lines=Walmart+Sales+Analysis;Store+Performance+%26+Insights;Python+Data+Analysis+💻" /> <br><br> <img src="https://img.shields.io/badge/💻-Python%203-1E40AF?style=for-the-badge&logo=python&logoColor=
-📝 Project Overview
-
+🛒 Walmart Sales Analysis Project
 This project analyzes historical Walmart sales data from 45 stores across different regions to uncover insights about:
 
 🏪 Store performance
