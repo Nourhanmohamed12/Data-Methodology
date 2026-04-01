@@ -1,101 +1,41 @@
-🛒 Walmart Sales Analysis Project
-This project analyzes historical Walmart sales data from 45 stores across different regions to uncover insights about:
+<div align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=60A5FA&center=true&vCenter=true&lines=Walmart+Sales+Analysis;Store+Performance+%26+Insights;Python+Data+Analysis+💻" /> <br><br> <img src="https://img.shields.io/badge/💻-Python%203-1E40AF?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/📊-Data%20Analysis-3B82F6?style=for-the-badge&logo=pandas&logoColor=white" /> <img src="https://img.shields.io/badge/🛒-Walmart%20Sales-60A5FA?style=for-the-badge" /> </div>
+<div align="center"><b style="color:#1E40AF">📊 Project Overview</b></div>
 
-🏪 Store performance
-🎉 Holiday impacts
-🌸 Seasonal and monthly trends
-📉 Economic factors
+This project analyzes Walmart store sales data across 45 stores over multiple years to derive insights about:
 
-Goal: Understand how holidays, seasons, and economic indicators influence weekly sales and provide actionable recommendations to improve store revenue.
+🏷️ The impact of holiday markdowns on sales
+📈 Store-wise revenue trends and variances
+🌡️ Influence of temperature, fuel price, CPI, and unemployment on sales
+📊 Monthly, seasonal, and holiday-based performance comparisons
 
-Dataset: Weekly sales data for 2010–2012 with store info, holiday flags, temperature, fuel price, CPI, and unemployment.
+The goal is to identify patterns, high-performing stores, and actionable insights to optimize promotions and maximize sales.
 
-📂 Dataset
-
-Source: Kaggle
-
-Key Columns:
-
-Column Name	Description
-🏪 Store	Store number (1–45)
-📅 Date	Week-ending date
-💵 Weekly_Sales	Weekly sales in USD
-🎉 Holiday_Flag	1 if holiday week, 0 otherwise
-🌡 Temperature	Regional temperature
-⛽ Fuel_Price	Fuel price in USD
-📈 CPI	Consumer Price Index
-📉 Unemployment	Regional unemployment rate
-🏷 Type	Store type (A = Large, B = Medium, C = Small)
-
-Additional Computed Columns:
-
-Day, Month, Year, Season
-Store_Type (Large, Medium, Small)
-Sales_Category (High vs Low weekly sales)
-Adjusted_Sales (Weekly sales adjusted by CPI)
-🛠 Tools & Libraries
-Python 3
-Pandas, NumPy – Data manipulation
-Matplotlib, Seaborn – Visualizations
-Datetime – Date operations
-warnings – Manage warnings
-🧹 Data Cleaning & Preprocessing
-✅ Checked for missing values & duplicates
-✅ Converted Date column to datetime format
-✅ Extracted day, month, year, and season
-✅ Created additional columns: Store_Type, Sales_Category, Adjusted_Sales
-✅ Handled outliers using IQR method for Weekly_Sales & Unemployment
-✅ Filled missing values in Fuel_Price & Unemployment using mean/median
-📊 Key Analyses & Insights
-1️⃣ Store Performance
-🏆 Store 20 → highest total weekly sales (strongest revenue)
-⚡ Store 14 → highest variability in sales (most volatile)
-📌 Store performance has stronger influence than macroeconomic indicators
-2️⃣ Holiday Impact
-Non-holiday weeks → higher total sales overall
-🎉 Top holiday sales: Thanksgiving > Super Bowl > Labour Day > Christmas
-Some stores (30, 36, 37, 38, 44) → negative impact from holiday weeks
-3️⃣ Seasonal & Monthly Trends
-🌸 April (Month 4) → highest total weekly sales
-🌼 Spring → highest seasonal sales
-📈 Seasonal/monthly patterns → optimal periods for promotions
-4️⃣ Economic Factors Impact
-⛽ Fuel Price & 📉 Unemployment → negatively correlated with sales
-CPI → weak negative impact
-Stores 12, 28, 38 → high fuel & unemployment → lower sales
-5️⃣ Correlation Analysis
-Strong positive correlation: Fuel_Price vs Year (fuel prices increased over time)
-Weak/moderate negative correlation: economic indicators vs weekly sales
-Store IDs & holiday-created columns excluded from correlation interpretation
-📊 Visualizations
-📊 Bar Charts → total weekly sales per store, month, season
-🥧 Pie Charts → sales by holiday flag & season
-📦 Boxplots & Histograms → distribution of sales, CPI, unemployment, temperature
-🔹 Scatter Plots → sales vs economic indicators
-💥 Bubble Chart → sales by season & holiday flag
-🌡 Heatmap → correlation between numeric factors & weekly sales
-💡 Key Recommendations
-🌸 Focus promotions during April & Spring (peak season)
-🎉 Encourage purchases during holidays with holiday flags
-🎯 Target stores with high unemployment & fuel price for special offers
-🦃 Thanksgiving → highest revenue, followed by Super Bowl & Labour Day
-💾 Output & Export
-💾 Cleaned dataset → walmart_clean.csv
-📊 Heatmaps & charts → saved as PNG for reporting
-📈 Additional computed columns → added to dataset
-⚡ Usage
-Clone the repository
-Install required libraries:
-pip install pandas numpy matplotlib seaborn
-Run the Jupyter Notebook (.ipynb)
-→ Reproduce analyses, visualizations, and cleaned datasets
-🏁 Project Summary
-
-This analysis provides a comprehensive view of Walmart store sales:
-
-Top-performing stores 🏆
-Seasonal trends 🌸
-Holiday effects 🎉
-Economic factor impacts 📉
-
-Outcome: Insights can guide strategic promotions, resource allocation, and revenue maximization across stores.
+<div align="center"> <img src="https://img.shields.io/badge/⚡-Insights-60A5FA?style=for-the-badge" /> <img src="https://img.shields.io/badge/📊-Visualization-3B82F6?style=for-the-badge" /> <img src="https://img.shields.io/badge/🏆-Optimization-1E40AF?style=for-the-badge" /> </div>
+✨ Key Features & Analyses
+Feature	Description
+🖥️ Data Cleaning & Preprocessing	Convert dates, handle outliers, check nulls
+🧠 Store Performance Analysis	Identify stores with highest sales & highest variance
+📊 Holiday Impact Analysis	Compare revenue during Super Bowl, Labour Day, Thanksgiving, Christmas vs non-holidays
+⚡ Temporal Insights	Analyze monthly, seasonal, and yearly sales trends
+🏆 Correlation Analysis	Investigate relation of sales with Fuel Price, CPI, Unemployment, Temperature
+📈 Visualizations	Bar plots, pie charts, histograms, boxplots, and heatmaps for insights
+🖥️ System Flow
+🔍 Key Insights
+Top Revenue Store: Store 20 generated the highest total weekly sales
+Highest Sales Variance: Store 14 shows the most variation in weekly sales
+Holiday Insights:
+Thanksgiving has the highest impact on sales
+Super Bowl and Labour Day follow, Christmas has the lowest impact
+Seasonal Trends: Spring shows the highest sales, Summer and Winter lower
+Monthly Trends: April and November are peak months for promotions
+Negative Correlations: Fuel Price and Unemployment are inversely related to sales, suggesting price sensitivity
+📊 Visualizations Overview
+Distribution of numeric features: Weekly_Sales, Temperature, Fuel_Price, CPI, Unemployment
+Boxplots for outlier detection and capping
+Heatmap for correlation among key numeric factors
+Bar plots for store, season, holiday, and month-wise comparisons
+💡 Actionable Recommendations
+Increase promotional activities in Spring and April for all stores
+Target stores with high unemployment or fuel price with discounts or holiday markdowns
+Focus on Thanksgiving and Super Bowl promotions for revenue boost
+Monitor Store 14 for sales volatility and implement strategic inventory management
