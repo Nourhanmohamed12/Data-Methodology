@@ -11,16 +11,26 @@ This project analyzes Walmart store sales data across 45 stores over multiple ye
 The goal is to identify patterns, high-performing stores, and actionable insights to optimize promotions and maximize sales.
 
 <div align="center"> <img src="https://img.shields.io/badge/⚡-Insights-60A5FA?style=for-the-badge" /> <img src="https://img.shields.io/badge/📊-Visualization-3B82F6?style=for-the-badge" /> <img src="https://img.shields.io/badge/🏆-Optimization-1E40AF?style=for-the-badge" /> </div>
-✨ Key Features & Analyses
-Feature	Description
-🖥️ Data Cleaning & Preprocessing	Convert dates, handle outliers, check nulls
-🧠 Store Performance Analysis	Identify stores with highest sales & highest variance
-📊 Holiday Impact Analysis	Compare revenue during Super Bowl, Labour Day, Thanksgiving, Christmas vs non-holidays
-⚡ Temporal Insights	Analyze monthly, seasonal, and yearly sales trends
-🏆 Correlation Analysis	Investigate relation of sales with Fuel Price, CPI, Unemployment, Temperature
-📈 Visualizations	Bar plots, pie charts, histograms, boxplots, and heatmaps for insights
-🖥️ System Flow
-🔍 Key Insights
+
+
+| Feature                           | Description                                                                            |
+| --------------------------------- | -------------------------------------------------------------------------------------- |
+| 🖥️ Data Cleaning & Preprocessing | Convert dates, handle outliers, check nulls                                            |
+| 🧠 Store Performance Analysis     | Identify stores with highest sales & highest variance                                  |
+| 📊 Holiday Impact Analysis        | Compare revenue during Super Bowl, Labour Day, Thanksgiving, Christmas vs non-holidays |
+| ⚡ Temporal Insights               | Analyze monthly, seasonal, and yearly sales trends                                     |
+| 🏆 Correlation Analysis           | Investigate relation of sales with Fuel Price, CPI, Unemployment, Temperature          |
+| 📈 Visualizations                 | Bar plots, pie charts, histograms, boxplots, and heatmaps for insights                 |
+
+
+<img width="543" height="1488" alt="mermaid-diagram (1)" src="https://github.com/user-attachments/assets/b8d1c973-c812-4c93-9af4-8e5540b11a64" />
+
+
+Monitor Store 14 for sales volatility and implement strategic inventory management
+
+
+Key Insights
+
 Top Revenue Store: Store 20 generated the highest total weekly sales
 Highest Sales Variance: Store 14 shows the most variation in weekly sales
 Holiday Insights:
@@ -29,13 +39,10 @@ Super Bowl and Labour Day follow, Christmas has the lowest impact
 Seasonal Trends: Spring shows the highest sales, Summer and Winter lower
 Monthly Trends: April and November are peak months for promotions
 Negative Correlations: Fuel Price and Unemployment are inversely related to sales, suggesting price sensitivity
+
 📊 Visualizations Overview
+
 Distribution of numeric features: Weekly_Sales, Temperature, Fuel_Price, CPI, Unemployment
 Boxplots for outlier detection and capping
 Heatmap for correlation among key numeric factors
 Bar plots for store, season, holiday, and month-wise comparisons
-💡 Actionable Recommendations
-Increase promotional activities in Spring and April for all stores
-Target stores with high unemployment or fuel price with discounts or holiday markdowns
-Focus on Thanksgiving and Super Bowl promotions for revenue boost
-Monitor Store 14 for sales volatility and implement strategic inventory management
